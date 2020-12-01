@@ -130,6 +130,13 @@ class GooglePlayAPI(object):
     def setAuthSubToken(self, authSubToken):
         self.authSubToken = authSubToken
 
+    def getToken(self):
+        return self.authSubToken
+
+    def getGsfId(self):
+        return self.gsfId
+
+
     def getHeaders(self, upload_fields=False):
         """Return the default set of request headers, which
         can later be expanded, based on the request type"""
